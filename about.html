@@ -37,6 +37,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 font-size: 2rem;
             }
         }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .nav-link {
+            color: blue !important;
+        }
+
+        /* Adjust the padding or any other styles as needed */
+        .banner-buttons {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .banner-buttons a {
+            margin-right: 20px;
+            color: blue;
+        }
+
+        .banner-buttons a:hover {
+            text-decoration: none;
+        }
     </style>
 
     <!-- Bootstrap CSS -->
@@ -52,59 +80,112 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="//fonts.googleapis.com/css?family=Thasadith:400,400i,700,700i&amp;subset=latin-ext,thai,vietnamese"
         rel="stylesheet">
 </head>
+
 <body>
-   <style>
-	.navbar-nav {
-            margin-center: auto;
-        }
-
-        .nav-link {
-            color: blue !important;
-        }
-
-        /* Adjust the padding or any other styles as needed */
-    </style>
-</head>
-
-
+    <nav class="navbar navbar-expand-lg navbar-white bg-white">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto mr-3">
+                    <li class="nav-item">
+                        <a class="nav-link blue-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link blue-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link blue-link" href="services.html">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Banner -->
-    <section style="background-image: url('https://cdn.create.vista.com/api/media/small/257720858/stock-photo-selective-focus-dermatologist-glasses-examining-woman-while-holding-dermatoscope-clinic'); background-position: center; background-size: cover;">
-    <div class="banner_w3lspvt">
-        <div class="csslider infinity" id="slider1">
-            <div class="banner-top">
-                <div class="overlay">
-                    <div class="container">
-                        <div class="w3layouts-banner-info text-Center">
-				
-                                      <div class="col-lg-6">
-                        <section class="blog py-5" id="About Us">
-            		    <div class="container py-md-6" style="margin-top: 20px;">
-            		        <h1 class="heading mb-sm-6 mb-5 text-center" style="color: blue;">About Us</h1>
-            		        <div class="row justify-content-center">
-            		            <div class="col-lg-12 blog-center mb-lg-0 mb-sm-6 pb-lg-0 pb-md-5">
-            		                <div class="draggable-box">
-            	                    <img src="https://magazine.medlineplus.gov/images/uploads/main_images/_main_article_list/is-it-vitiligo.jpg" class="img-fluid" alt="" width="474" height="400" style="margin-center: 18px;">
-            					 <a href="upload.html">
-            	                        <div class="blog-info">
-            	                            <h4 style="margin-center: 60px;">ADVANCING DERMATOLOGY,<br> ENRICHING LIVES,<br> IDENTIFYING SKIN DISEASES.<br></h4>
-            	                            <p class="mt-4" style="margin-center: 60px; text-align: center;">Utilizing machine learning, we offer solutions to predict and address various skin conditions. Our mission is to empower users with accurate predictions about their skin health</p>
-            		                        </div>
-            		                    </a>
-            		                </div>
-            		            </div>
-            		        </div>
-            		    </div>
-            		</section>
-            
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skin Disease Diagnosis</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .container-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        max-width: 800px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .banner {
+        position: relative;
+        background-image: url('https://as1.ftcdn.net/v2/jpg/07/14/95/92/1000_F_714959254_u8KHeFc3Id0S26jxpsp7QeFf1RxaEinL.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .text-wh {
+        color: white;
+    }
+
+    .banner-buttons {
+        margin-top: 20px;
+    }
+
+    .banner-buttons a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        padding: 5px 10px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .banner-buttons a:hover {
+        background-color: white;
+        color: black;
+    }
+</style>
+</head>
+<body>
+    <section class="banner">
+        <div class="container-box">
+            <div class="banner_w3lspvt" id="Home">
+                <div class="csslider infinity" id="slider1">
+                    <div class="banner-top">
+                        <div class="overlay">
+                            <div class="container">
+                                <div class="w3layouts-banner-info text-Center">
+                                    <h1 class="text-wh text-center" style="font-size: 90px;style="color: blue;">About Us</h1>
+                                    <h3 class="title mt-0" style="margin-left: -70px;">ADVANCING DERMATOLOGY,<br> ENRICHING LIVES,<br> IDENTIFYING SKIN DISEASES.<br></h3>
+                           <p class="mt-3" style="margin-left: -70px;">Utilizing machine learning, we offer solutions to predict and address various skin conditions. Our mission is to empower users with accurate predictions about their skin health.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-</div>
-    <!-- //Banner -->
-    <!-- //Products & Services -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
