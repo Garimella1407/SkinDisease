@@ -65,6 +65,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         .banner-buttons a:hover {
             text-decoration: none;
         }
+
+        /* Center align text */
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
     </style>
 
     <!-- Bootstrap CSS -->
@@ -89,13 +99,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto mr-3">
-                    <li class="nav-item">
-                        <a class="nav-link blue-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link blue-link" href="about.html">About Us</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link blue-link" href="services.html">Services</a>
                     </li>
@@ -104,88 +107,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </nav>
     <!-- Banner -->
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skin Disease Diagnosis</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-    }
-
-    .container-box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80%;
-        max-width: 800px;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    .banner {
-        position: relative;
-        background-image: url('https://as1.ftcdn.net/v2/jpg/07/14/95/92/1000_F_714959254_u8KHeFc3Id0S26jxpsp7QeFf1RxaEinL.jpg');
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
-    }
-
-    .text-wh {
-        color: white;
-    }
-
-    .banner-buttons {
-        margin-top: 20px;
-    }
-
-    .banner-buttons a {
-        color: white;
-        margin: 0 10px;
-        text-decoration: none;
-        padding: 5px 10px;
-        border: 1px solid white;
-        border-radius: 5px;
-    }
-
-    .banner-buttons a:hover {
-        background-color: white;
-        color: black;
-    }
-</style>
-</head>
-<body>
     <section class="banner">
-        <div class="container-box">
-            <div class="banner_w3lspvt" id="Home">
-                <div class="csslider infinity" id="slider1">
-                    <div class="banner-top">
-                        <div class="overlay">
-                            <div class="container">
-                                <div class="w3layouts-banner-info text-Center">
-                                    <h1 class="text-wh text-center" style="font-size: 90px;style="color: blue;">About Us</h1>
-                                    <h3 class="title mt-0" style="margin-left: -70px;">ADVANCING DERMATOLOGY,<br> ENRICHING LIVES,<br> IDENTIFYING SKIN DISEASES.<br></h3>
-                           <p class="mt-3" style="margin-left: -70px;">Utilizing machine learning, we offer solutions to predict and address various skin conditions. Our mission is to empower users with accurate predictions about their skin health.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="banner-text">
+            <h1 class="text-center" style="font-size: 70px; color: blue;">About Us</h1>
+            <h4 class="title mt-0">ADVANCING DERMATOLOGY, ENRICHING LIVES, IDENTIFYING SKIN DISEASES.</h4>
+            <p class="mt-3">Utilizing machine learning, we offer solutions to predict and address various skin conditions. Our mission is to empower users with accurate predictions about their skin health.</p>
         </div>
     </section>
-</body>
-</html>
-
 </body>
 
 </html>
