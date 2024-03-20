@@ -89,58 +89,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</nav>
 
     <!-- Banner -->
-    <style>
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-  }
-
-  .banner_w3lspvt {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    animation: slide 10s infinite;
-  }
-
-  @keyframes slide {
-    0%, 100% { background-image: url('https://as1.ftcdn.net/v2/jpg/07/14/95/92/1000_F_714959254_u8KHeFc3Id0S26jxpsp7QeFf1RxaEinL.jpg'); }
-    33.33% { background-image: url('https://starhomeo.com/star-campaign/img/ban-new.jpg'); }
-    66.66% { background-image: url('https://www.hasnerlaw.com/wp-content/uploads/2021/12/Do-I-Have-to-Get-an-Independent-Medical-Exam.jpg'); }
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
-
-  .container {
-    z-index: 2;
-    position: relative;
-    color: #fff;
-    text-align: center;
-  }
-	    
-</style>
-    <section style="background-position: center;">
-    <div class="banner_w3lspvt" id="Home">
+    <section style="background-image: url('https://as1.ftcdn.net/v2/jpg/07/14/95/92/1000_F_714959254_u8KHeFc3Id0S26jxpsp7QeFf1RxaEinL.jpg'); background-position: center;"
+        <div class="banner_w3lspvt" id="Home">
         <div class="csslider infinity" id="slider1">
+
             <div class="banner-top">
                 <div class="overlay">
                     <div class="container">
                         <div class="w3layouts-banner-info text-Center">
-				<h3 class="text-wh" style="margin-top: -100px; color: white;">Skin Disease Diagnosis</h3>
+                          <h3 class="text-wh" style="margin-top: -100px; color: white;">Skin Disease Diagnosis</h3>
                             
                                <h4 class="text-wh mx-auto my-2" style="margin-right: 0; margin-left: -50px; color: white;"><b>Acquire information about your skin problem.</b></h4>
 
@@ -150,73 +107,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 ✓ Examine your symptoms.<br>
                                 ✓ Embrace remedies for your skin.<br>
                             </p>
-                            <!-- Slideshow container -->
-                            <div class="slideshow-container">
-                                <!-- Slides -->
-                                <div class="slide" style="background-image: url('https://as1.ftcdn.net/v2/jpg/07/14/95/92/1000_F_714959254_u8KHeFc3Id0S26jxpsp7QeFf1RxaEinL.jpg');"></div>
-                                <div class="slide" style="background-image: url('https://starhomeo.com/star-campaign/img/ban-new.jpg');"></div>
-                                <div class="slide" style="background-image: url('https://www.hasnerlaw.com/wp-content/uploads/2021/12/Do-I-Have-to-Get-an-Independent-Medical-Exam.jpg');"></div>
+                            
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<style>
-    /* Define the slideshow container */
-    .slideshow-container {
-        position: relative;
-        max-width: 100%;
-        height: 400px; /* Set the desired height */
-        overflow: hidden;
-    }
-
-    /* Hide all slides by default */
-    .slide {
-        display: none;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-    }
-
-    /* Show the first slide */
-    .slide:first-child {
-        display: block;
-    }
-
-    /* Add animation to the slides */
-    @keyframes slide {
-        0% { left: 0; }
-        100% { left: -100%; }
-    }
-
-    /* Add infinite loop effect */
-    .slide {
-        animation: slide 3s linear infinite;
-    }
-</style>
-
-<script>
-    // JavaScript for slideshow functionality
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slide');
-
-    function showSlide(n) {
-        slides[currentSlide].style.display = 'none';
-        currentSlide = (n + slides.length) % slides.length;
-        slides[currentSlide].style.display = 'block';
-    }
-
-    setInterval(() => {
-        showSlide(currentSlide + 1);
-    }, 3000); // Change slide every 3 seconds
-</script>
-
+    </section>
     <!-- //Banner -->
 
     <!-- Core Values -->
@@ -271,5 +168,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- //Products & Services -->
 
 </body>
-
 </html>
