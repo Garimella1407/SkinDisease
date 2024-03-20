@@ -89,54 +89,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</nav>
 
     <!-- Banner -->
-   <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Slideshow</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-  }
-
-  .slideshow-container {
-    position: relative;
-    max-width: 800px;
-    max-height: 400px;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .slide {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    animation: fade 1s linear infinite;
-  }
-
-  @keyframes fade {
-    0%, 100% { opacity: 0; }
-    10%, 90% { opacity: 1; }
-  }
-</style>
-</head>
-<body>
-  <div class="slideshow-container">
-    <div class="slide" style="background-image: url('https://www.hasnerlaw.com/wp-content/uploads/2021/12/Do-I-Have-to-Get-an-Independent-Medical-Exam.jpg');"></div>
-    <div class="slide" style="background-image: url('https://as1.ftcdn.net/v2/jpg/07/14/95/92/1000_F_714959254_u8KHeFc3Id0S26jxpsp7QeFf1RxaEinL.jpg');"></div>
-    <div class="slide" style="background-image: url('https://starhomeo.com/star-campaign/img/ban-new.jpg');"></div>
-  </div>
-
+    <section style="background-image: url('https://www.hasnerlaw.com/wp-content/uploads/2021/12/Do-I-Have-to-Get-an-Independent-Medical-Exam.jpg'); background-position: center;"
         <div class="banner_w3lspvt" id="Home">
         <div class="csslider infinity" id="slider1">
 
@@ -154,18 +107,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 ✓ Examine your symptoms.<br>
                                 ✓ Embrace remedies for your skin.<br>
                             </p>
-                            <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slide');
-
-    function nextSlide() {
-      slides[currentSlide].style.display = 'none';
-      currentSlide = (currentSlide + 1) % slides.length;
-      slides[currentSlide].style.display = 'block';
-    }
-
-    setInterval(nextSlide, 3000); // Change slide every 3 seconds
-  </script>
+                            
                             </div>
                         </div>
                     </div>
