@@ -49,8 +49,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         /* Adjust the padding or any other styles as needed */
         .banner-buttons {
             position: absolute;
-            top: 20px;
-            right: 20px;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
             background: rgba(255, 255, 255, 0.8);
             padding: 10px 20px;
             border-radius: 5px;
@@ -81,34 +82,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body>
-     <style>
-        /* Custom CSS for background image on buttons */
-        .nav-link {
-            position: relative;
-            display: inline-block;
-        }
-
-        .nav-link::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('https://starhomeo.com/star-campaign/img/ban-new.jpg');
-            background-position: center;
-            background-size: cover;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .nav-link:hover::before {
-            opacity: 0.6;
-        }
-    </style>
-</head>
-
-<body>
     <nav class="navbar navbar-expand-lg navbar-white bg-white">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -131,25 +104,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </nav>
     <!-- Banner -->
-    <section
-        style="position: relative; background-image: url('https://starhomeo.com/star-campaign/img/ban-new.jpg'); background-position: center; background-size: cover; height: 100vh;">
+    <section style="position: relative; background-image: url('https://as1.ftcdn.net/v2/jpg/07/14/95/92/1000_F_714959254_u8KHeFc3Id0S26jxpsp7QeFf1RxaEinL.jpg'); background-position: center; background-size: cover;">
         <div class="banner_w3lspvt" id="Home">
             <div class="csslider infinity" id="slider1">
                 <div class="banner-top">
                     <div class="overlay">
                         <div class="container">
                             <div class="w3layouts-banner-info text-Center">
-                                    style="margin-top: -10px; color: white; font-size: 90px;"><strong>Skin Disease
-                                        Diagnosis</strong></h1>
-                                <h4 class="text-wh text-center" style="color: white;"><b>Acquire information about
-                                        your skin problem</b></h4>
+                                <h1 class="text-wh text-center" style="margin-top: 30px; color: white; font-size: 90px;">Skin Disease Diagnosis</h1>
+                                <h4 class="text-wh text-center" style="color: white;"><b>Acquire information about your skin problem</b></h4>
                                 <br>
                                 <div class="text-center text-wh" style="color: white;">
                                 <p>✓ Identify your specific skin disorder.</p>
                                 <p>✓ Examine your symptoms.</p>
                                 <p>✓ Embrace remedies for your skin.</p>
                             </div>
-
                             </div>
                         </div>
                     </div>
