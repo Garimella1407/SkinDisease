@@ -473,6 +473,20 @@ li > a:only-child:after { content: ''; }
 .w3layouts-banner-info i {
     vertical-align: middle;
 }
+.banner_w3lspvt {
+    position: relative;
+    background-image: url('https://as1.ftcdn.net/v2/jpg/07/14/95/92/1000_F_714959254_u8KHeFc3Id0S26jxpsp7QeFf1RxaEinL.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
 
 .banner-top,
 .banner-top1,
