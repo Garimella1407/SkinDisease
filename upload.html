@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,32 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffe0bd; /* Skin tone color */
+            background-image: url('https://as2.ftcdn.net/v2/jpg/01/17/12/37/1000_F_117123796_MBKR6xeMfrBdfhSWNWtjTddwUci1F2HR.jpg');
+            background-size: cover;
+            background-position: center;
         }
+
         .container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
             border-radius: 8px;
+            background-color: rgba(255, 224, 189, 0.8); /* Skin tone color with opacity */
         }
+
         h1 {
             text-align: center;
         }
+
         form {
             text-align: center;
             margin-top: 30px;
         }
+
         input[type="file"] {
             display: none;
         }
+
         label {
             display: inline-block;
             background-color: #4CAF50;
@@ -35,20 +44,25 @@
             cursor: pointer;
             border-radius: 5px;
         }
+
         label:hover {
             background-color: #45a049;
         }
+
         #image-preview {
             text-align: center;
             margin-top: 20px;
         }
+
         #result {
             margin-top: 30px;
         }
+
         img {
             max-width: 40%;
             height: auto;
         }
+
         .predict-button {
             background-color: #ff4d4d; /* Red color for the predict button */
             color: white;
@@ -60,11 +74,13 @@
             margin: 20px auto 0; /* Center align */
             width: 150px; /* Match the width with the "Choose an image" button */
         }
+
         .predict-button:hover {
             background-color: #ff3333; /* Darker red on hover */
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Skin Disease Prediction</h1>
@@ -77,7 +93,7 @@
         <button class="predict-button" onclick="redirectToNextPage()">Predict</button>
     </div>
     <div id="prediction-results"></div>
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
 
     <script>
         function previewImage(event) {
@@ -93,11 +109,12 @@
             // Display filename
             document.getElementById('Skin-Disease').innerText = event.target.files[0].name;
         }
-        
+
         function redirectToNextPage() {
             // Redirect to the next page
             window.location.href = 'nextpage.html';
         }
     </script>
 </body>
+
 </html>
