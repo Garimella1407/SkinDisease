@@ -66,22 +66,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             text-decoration: none;
         }
 
-        /* Positioning for About Us and Services sections */
-        #AboutUs,
-        #Services {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
+        /* Two-column layout */
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
         }
 
-        #AboutUs h3,
-        #Services h3 {
-            margin-bottom: 20px;
+        .two-column > div {
+            flex: 0 0 48%;
+        }
+
+        /* Styling for About Us and Services sections */
+        #AboutUs,
+        #Services {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: left;
         }
 
         #Services img {
@@ -121,17 +124,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
         </div>
-        <div id="AboutUs">
-            <h3>About Us</h3>
-            <p>Utilizing machine learning, we offer solutions to predict and address various skin conditions. Our mission is to empower users with accurate predictions about their skin health.</p>
-        </div>
-        <div id="Services">
-            <h3>Services</h3>
-            <div class="draggable-box">
-                <img src="https://magazine.medlineplus.gov/images/uploads/main_images/_main_article_list/is-it-vitiligo.jpg" class="img-fluid" alt="" width="474" height="400">
-                <div class="blog-info">
-                    <h4>SKIN DISEASE DETECTION</h4>
-                    <p>Anticipate disease type, symptoms and preventive measures for minimizing its impact.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div id="AboutUs">
+                        <h3>About Us</h3>
+                        <p>Utilizing machine learning, we offer solutions to predict and address various skin conditions. Our mission is to empower users with accurate predictions about their skin health.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="Services">
+                        <h3>Services</h3>
+                        <div class="draggable-box">
+                            <img src="https://magazine.medlineplus.gov/images/uploads/main_images/_main_article_list/is-it-vitiligo.jpg" class="img-fluid" alt="" width="474" height="400">
+                            <div class="blog-info">
+                                <h4>SKIN DISEASE DETECTION</h4>
+                                <p>Anticipate disease type, symptoms and preventive measures for minimizing its impact.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
